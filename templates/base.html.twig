@@ -6,10 +6,54 @@
         {% block stylesheets %} {{ encore_entry_link_tags('app') }} {% endblock %}
     </head>
     <body>
-        <div class="text-center">
-            <img src="{{ asset('images/images.jpeg' | imagine_filter('logo_header')) }}" class="rounded" />
+        <div id="headerBar">
+            <div class="text-center">
+                <img src="{{ asset('images/images.jpeg' | imagine_filter('logo_header')) }}" class="rounded" />
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Où nous trouver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Qui sommes nous</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         {% block body %}{% endblock %}
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+        <footer id="footerBar" class="pt-4 my-md-5 pt-md-5 border-top bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Cool stuff</a></li>
+                            <li><a class="text-muted" href="#">Random feature</a></li>
+                            <li><a class="text-muted" href="#">Team feature</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Another one</a></li>
+                            <li><a class="text-muted" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="https://www.linkedin.com/in/santiago-ponce-de-leon-elias-424215ab/" target="_blank"> Santiago Ponce de Leon Elias</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
     </body>
 </html>
