@@ -50,6 +50,22 @@ $jumbotron-bg: #DCDCDC;
     }
 }
 
+.featurette {
+
+  @media (min-width: 62em) {
+    &-heading {
+      margin-top: 7rem;
+    }
+
+    &-heading {
+      margin-top: 5rem;
+    }
+
+  }
+}
+
+
+
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
