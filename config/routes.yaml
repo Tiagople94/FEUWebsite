@@ -5,3 +5,7 @@
 homepage:
     path: /
     controller: App\Controller\HomepageController::index
+showAboutUs:
+    path: /about
+    controller: App\Controller\AboutusController::index
+
