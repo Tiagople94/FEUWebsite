@@ -3,18 +3,32 @@
 {% block title %}Hello AboutusController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/sponce/Local/FEUWebsite/src/Controller/AboutusController.php'|file_link(0) }}">src/Controller/AboutusController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/sponce/Local/FEUWebsite/templates/aboutus/aboutus.html.twig'|file_link(0) }}">templates/aboutus/index.html.twig</a></code></li>
-    </ul>
+<div class="container">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">
+                <i class="fontAw fas fa-question-circle fa-1x"></i>   Qui sommes-nous?
+            </h2>
+            <p class="lead">
+                Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
+                Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.
+            </p>
+            <br>
+            <p class="lead">
+                Héritiers de la Réforme, notre seule source d’autorité est la Bible. Nous nous réunissons tous les dimanches pour adorer Dieu et pour entendre l’enseignement de la Bible,
+                Parole de Dieu. Le repas du Seigneur, ou cène, est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du sacrifice de Jésus-Christ pour nous.
+            </p>
+            <br>
+            <p class="lead">
+                Notre association est membre du Réseau FEF (réseau Fraternel Évangélique Français), dont elle partage la confession de foi.
+                Nous faisons partie du CNEF (Conseil National des Évangéliques de France).
+                Nous appartenons également à la famille d’églises CAEF (Communautés et Assemblées Évangéliques de France).
+                Le CEP Aix c’est aussi des partenariats avec le FEU Aix (Foyer Evangélique Universitaire), le CFRi (Centre de Formation Régional pour Implanteur), l’AFP La Source (Association Familiale Protestante) et les Editions CAEF.
+            </p>
+        </div>
+        <div class="col-md-5 my-auto">
+            <img class="featurette-image img-fluid .align-items-center mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1750923683a%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1750923683a%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+        </div>
+    </div>
 </div>
 {% endblock %}
