@@ -77,6 +77,11 @@ $jumbotron-bg: #DCDCDC;
   margin-right: 5px;
 }
 
+.nav-item:hover {
+  border-bottom: 1px solid #ff1e4e !important;
+}
+
+
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
