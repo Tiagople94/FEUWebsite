@@ -7,10 +7,7 @@
     </head>
     <body>
         <div id="headerBar">
-            <div class="text-center">
-                <img src="{{ asset('images/images.jpeg' | imagine_filter('logo_header')) }}" class="rounded" />
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +29,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">
+                            <a class="nav-link text-light" href="{{ path('contact_form') }}">
                                 <b>Contact</b>
                             </a>
                         </li>

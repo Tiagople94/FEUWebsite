@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactFormController!{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row featurette">
+        <div class="col-lg-auto">
+            <div class="featurette-heading">
+                <h2> Nous contacter </h2>
+            </div>
+            {{ form(contactForm) }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
