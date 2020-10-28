@@ -23,9 +23,6 @@ $jumbotron-bg: #DCDCDC;
     }
 
     .quote-icon {
-      font-weight: bold;
-      font-size: 120px;
-      color: #f75553;
       position: absolute;
       top: -50px;
       left: 0;
@@ -52,18 +49,37 @@ $jumbotron-bg: #DCDCDC;
 
 .featurette {
 
+  margin-top: 2em;
+
   @media (min-width: 62em) {
     &-heading {
       margin-top: 7rem;
     }
-
-    &-heading {
-      margin-top: 5rem;
-    }
-
   }
+
+  &-heading {
+    margin-top: 5rem;
+  }
+
 }
 
+.btn {
+  border-radius: 10px !important;
+}
+
+.btn-secondary {
+  background-color: #f75553 !important;
+  border-color: #8b0000 !important;
+}
+
+.fontAw {
+  color: #f75553 !important;
+  margin-right: 5px;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid #ff1e4e !important;
+}
 
 
 

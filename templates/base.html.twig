@@ -10,20 +10,31 @@
             <div class="text-center">
                 <img src="{{ asset('images/images.jpeg' | imagine_filter('logo_header')) }}" class="rounded" />
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('homepage') }}">Accueil </a>
+                            <a class="nav-link text-light" href="{{ path('homepage') }}">
+                                <b>Accueil</b>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Où nous trouver</a>
+                            <a class="nav-link text-light" href="{{ path('showAboutUs') }}">
+                                <b>Qui sommes nous</b>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('showAboutUs') }}">Qui sommes nous</a>
+                            <a class="nav-link text-light" href="#">
+                                <b>Nos activites</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                <b>Contact</b>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -31,22 +42,47 @@
         </div>
         {% block body %}{% endblock %}
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
-        <footer id="footerBar" class="pt-4 my-md-5 pt-md-5 border-top bg-light">
+        <div class="pt-5 pb-5 mt-5 border-top bg-dark">
+                <div class="row text-light">
+                    <div class="col-lg-4 mx-auto text-center">
+                        <i class="fontAw fas fa-map-marker fa-2x"></i>
+                        <span class="d-block text-monospace mt-1">Localisation:</span>
+                        <span class="d-block mt-1">12 Bis rue de Provence</span>
+                    </div>
+                    <div class="col-lg-4 mx-auto text-center">
+                        <i class="fontAw fas fa-clock fa-2x"></i>
+                        <span class="d-block text-monospace mt-1">Horaire du culte:</span>
+                        <span class="d-block mt-1">Tous les Dimanches a 10h30</span>
+                    </div>
+                    <div class="col-lg-4 mx-auto text-center">
+                        <i class="fontAw fas fa-comments fa-2x"></i>
+                        <span class="d-block text-monospace mt-1">Nous contacter:</span>
+                        <span class="d-block mt-1">Email: info@yoursite.com</span>
+                    </div>
+                </div>
+        </div>
+        <footer id="footerBar" class="pt-md-5 border-top bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8">
-
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <h4>Follow Us</h4>
-
+                    <div class="col-lg-12 mx-auto">
+                        <h4 class="text-center">Nos reseaux sociaux</h4>
+                        <p>
+                        <div class="col">
+                            <div class="row center justify-content-around">
+                                <ul class="justify-content-center list-unstyled">
+                                    <li>
+                                        <i class="fontAw fab fa-facebook fa-3x"></i>
+                                        <i class="fontAw fab fa-instagram fa-3x"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="footer-copyright text-center py-3">© 2020 Copyright:
                     <a href="https://www.linkedin.com/in/santiago-ponce-de-leon-elias-424215ab/" target="_blank"> Santiago Ponce de Leon Elias</a>
                 </div>
-
             </div>
         </footer>
     </body>
