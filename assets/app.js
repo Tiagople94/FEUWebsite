@@ -7,12 +7,20 @@
 
 // any CSS you import will output into a single css file (app.scss in this case)
 import './styles/app.scss';
+import "bootstrap/js/src/index";
+import "jquery/dist/jquery";
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
 
-// Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
-// import $ from 'jquery';
-
-console.log('Hello Webpack Encore! Edit me in assets/app.js');
-
-console.log('jQuery');
+// Collapse Navbar
+var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-scrolled bg-dark navbar-dark");
+    } else {
+        $("#mainNav").removeClass("navbar-scrolled bg-dark navbar-dark");
+    }
+};
+// Collapse now if page is not at top
+navbarCollapse();
+// Collapse the navbar when page is scrolled
+$(window).scroll(navbarCollapse);

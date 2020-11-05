@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Bienvenue au CEP d'Aix!{% endblock %}</title>
         {% block stylesheets %} {{ encore_entry_link_tags('app') }} {% endblock %}
     </head>
-    <body>
-        <div id="headerBar">
-            <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="{{ path('homepage') }}">
-                                <b>Accueil</b>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="{{ path('showAboutUs') }}">
-                                <b>Qui sommes nous</b>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">
-                                <b>Nos activites</b>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="{{ path('contact_form') }}">
-                                <b>Contact</b>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="150">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">CEP D'AIX</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutus">Qui sommes nous?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Nos activites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        {% block body %}{% endblock %}
+    </nav>        {% block body %}{% endblock %}
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
-        <div class="pt-5 pb-5 mt-5 border-top bg-dark">
+        <div class="pt-5 pb-5 mt-5 border-top bg-dark" id="contact">
                 <div class="row text-light">
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-map-marker fa-2x"></i>
