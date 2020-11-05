@@ -17,7 +17,7 @@ var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-scrolled bg-dark navbar-dark");
     } else {
-        $("#mainNav").removeClass("navbar-scrolled bg-dark navbar-dark");
+        $("#mainNav").removeClass("navbar-scrolled bg-dark navbar-dark bg-light");
     }
 };
 // Collapse now if page is not at top
