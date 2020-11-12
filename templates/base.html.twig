@@ -32,9 +32,14 @@
                     </div>
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-comments fa-2x"></i>
-                        <span class="d-block text-monospace mt-1">Nous contacter:</span>
-                        <span class="d-block mt-1">Email: info@yoursite.com</span>
-                    </div>
+                        <button type="button"
+                                class="text-monospace mt-1 btn btn-secondary"
+                                data-toggle="modal"
+                                data-target="#contactForm"
+                        >
+                            Nous contacter
+                        </button>
+                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                    </div>
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-clock fa-2x"></i>
                         <span class="d-block text-monospace mt-1">Horaire du culte:</span>
