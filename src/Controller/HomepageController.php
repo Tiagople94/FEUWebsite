@@ -14,12 +14,8 @@ class HomepageController extends AbstractController
      */
     public function index()
     {
-        $contact = new Contact();
-        $form = $this->createForm(ContactFormType::class, $contact);
-
         return $this->render('homepage/index.html.twig', [
             'controller_name' => 'HomepageController',
-            'contactForm'     => $form->createView(),
         ]);
     }
 }
