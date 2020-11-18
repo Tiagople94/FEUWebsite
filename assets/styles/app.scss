@@ -94,7 +94,16 @@ $jumbotron-bg: #DCDCDC;
 }
 
 .btn {
-  border-radius: 10px !important;
+  border-radius: 10px !important; 
+
+    &-xl {
+      padding: 1.25rem 2.25rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 10rem;
+    }
+
 }
 
 .btn-secondary {
@@ -113,30 +122,6 @@ $jumbotron-bg: #DCDCDC;
 
 html {
   scroll-behavior: smooth;
-}
-
-.myButton {
-  box-shadow: 0 10px 14px -7px #276873;
-  background: #599bb3 linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-  border-radius:8px;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family: Arial, serif;
-  font-size:20px;
-  font-weight:bold;
-  padding:13px 32px;
-  text-decoration:none;
-  text-shadow:0 1px 0 #3d768a;
-}
-
-.myButton:hover {
-  background: #408c99 linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-}
-
-.myButton:active {
-  position: relative;
-  top: 1px;
 }
 
 // the ~ allows you to reference things in node_modules
