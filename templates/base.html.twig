@@ -14,7 +14,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ path('homepage') }}">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="#aboutus">Qui sommes nous?</a></li>
                     <li class="nav-item"><a class="nav-link" href="#activities">Nos activites</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -31,10 +31,15 @@
                         <span class="d-block mt-1">12 Bis rue de Provence</span>
                     </div>
                     <div class="col-lg-4 mx-auto text-center">
-                        <i class="fontAw fas fa-comments fa-2x"></i>
-                        <span class="d-block text-monospace mt-1">Nous contacter:</span>
-                        <span class="d-block mt-1">Email: info@yoursite.com</span>
-                    </div>
+
+                        <button type="button"
+                                class="myButton d-flex align-items-center m-auto"
+                                data-toggle="modal"
+                                data-target="#contactForm"
+                        >
+                            <i class="fontAw fas fa-comments fa-2x"></i> Nous contacter
+                        </button>
+                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                    </div>
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-clock fa-2x"></i>
                         <span class="d-block text-monospace mt-1">Horaire du culte:</span>
