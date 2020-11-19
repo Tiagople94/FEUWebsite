@@ -19,20 +19,12 @@ class ContactFormController extends AbstractController
         $form = $this->createForm(ContactFormType::class, $contact);
 
         $form->handleRequest($request);
-        dump($form);
-    if ($form->isSubmitted() && $form->isValid()) {
-        // $form->getData() holds the submitted values
-        // but, the original `$task` variable has also been updated
-        $task = $form->getData();
+        dump($contact);
 
-        // ... perform some action, such as saving the task to the database
-        // for example, if Task is a Doctrine entity, save it!
-        // $entityManager = $this->getDoctrine()->getManager();
-        // $entityManager->persist($task);
-        // $entityManager->flush();
+        if ($form->isSubmitted()) {
+            
 
-        return die();
-    }
+        }
 
         return $this->render('contact_form/index.html.twig', [
             'controller_name' => 'ContactFormController',
