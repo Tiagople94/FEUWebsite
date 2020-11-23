@@ -20,20 +20,25 @@ class ContactFormType extends AbstractType
             ->add('email', EmailType::class, [
                 'label_format' => 'Votre email',
                 'label_attr' => ['class' => 'col-form-label'],
-                'attr' => ['class' => 'form-control']
+                'attr' => [
+                    'class' => 'form-control'
+                ]
             ])
             ->add('name', TextType::class, [
                 'label_format' => 'Votre nom',
                 'label_attr' => ['class' => 'col-form-label'],
-                'attr' => ['class' => 'form-control']
+                'attr' => [
+                    'class' => 'form-control',
+                ]
             ])
             ->add('message', TextareaType::class, [
                 'label_format' => 'Contenu de votre message',
                 'label_attr' => ['class' => 'col-form-label'],
-                'attr' => ['class' => 'form-control', 'rows' => 7]
-            ])
-            ->add('Envoyer', SubmitType::class, [
-                'attr' => ['class' => 'btn btn-secondary']
+                'attr' => [
+                    'class' => 'form-control', 
+                    'rows' => 7,
+                    'placeholder' => 'Bonjour, je vous contacte...'
+                ]
             ]);
     }
 

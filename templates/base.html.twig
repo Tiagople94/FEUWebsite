@@ -24,6 +24,7 @@
     </nav>        {% block body %}{% endblock %}
         {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
         <div class="pt-5 pb-5 mt-5 border-top bg-dark" id="contact">
+            <div class="container">
                 <div class="row text-light">
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-map-marker fa-2x"></i>
@@ -33,19 +34,22 @@
                     <div class="col-lg-4 mx-auto text-center">
 
                         <button type="button"
-                                class="myButton d-flex align-items-center m-auto"
+                                class="btn-xl btn-secondary d-flex align-items-center m-auto"
                                 data-toggle="modal"
                                 data-target="#contactForm"
+                                id="contactButton"
                         >
-                            <i class="fontAw fas fa-comments fa-2x"></i> Nous contacter
+                            <i class="fas fa-comments fa-2x"></i> Nous contacter
                         </button>
-                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                    </div>
+                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                  
+                    </div>
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-clock fa-2x"></i>
                         <span class="d-block text-monospace mt-1">Horaire du culte:</span>
                         <span class="d-block mt-1">Tous les Dimanches a 10h30</span>
                     </div>
                 </div>
+            </div>  
         </div>
         <footer id="footerBar" class="pt-md-5 border-top bg-light">
             <div class="container">
