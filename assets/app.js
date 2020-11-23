@@ -24,14 +24,14 @@ var navbarCollapse = function() {
 navbarCollapse();
 // Collapse the navbar when page is scrolled
 $(window).scroll(navbarCollapse);
+
+//Ajax call to controller for sending mail "Mailer"
  $(document).ready(function(){   
-         $("#submitButton").on("click", function(event){ 
-         	console.log($('form').serializeArray()); 
+         $("#submitButton").on("click", function(event){
             $.ajax({  
                url:  '/contact/formSent',  
                type: 'POST',
-               data: $('form').serializeArray(),      
-               
+               data: $('form').serializeArray(),
                success: function(data) {  
              		console.log(data);
                },  
