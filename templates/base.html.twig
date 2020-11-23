@@ -37,10 +37,12 @@
                                 class="btn-xl btn-secondary d-flex align-items-center m-auto"
                                 data-toggle="modal"
                                 data-target="#contactForm"
+                                id="contactButton"
                         >
                             <i class="fas fa-comments fa-2x"></i> Nous contacter
                         </button>
-                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                    </div>
+                        {{ render(controller('App\\Controller\\ContactFormController::index')) }}                  
+                    </div>
                     <div class="col-lg-4 mx-auto text-center">
                         <i class="fontAw fas fa-clock fa-2x"></i>
                         <span class="d-block text-monospace mt-1">Horaire du culte:</span>

@@ -24,3 +24,20 @@ var navbarCollapse = function() {
 navbarCollapse();
 // Collapse the navbar when page is scrolled
 $(window).scroll(navbarCollapse);
+ $(document).ready(function(){   
+         $("#submitButton").on("click", function(event){ 
+         	console.log($('form').serializeArray()); 
+            $.ajax({  
+               url:  '/contact/formSent',  
+               type: 'POST',
+               data: $('form').serializeArray(),      
+               
+               success: function(data) {  
+             		console.log(data);
+               },  
+               error : function(xhr, textStatus, errorThrown) {  
+                  console.log('Ajax request failed.');  
+               }  
+            });  
+         });  
+      });  

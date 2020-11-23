@@ -1,4 +1,4 @@
-{{ form_start(contactForm) }}
+{{ form_start(contactForm, {'action': path('contact_form')}) }}
 <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content text-dark">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary" >Envoyer</button>
+                <button type="button" id="submitButton" class="btn btn-secondary">Envoyer</button>
             </div>
         </div>
     </div>
