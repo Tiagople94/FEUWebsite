@@ -47,25 +47,27 @@ class ContactFormController extends AbstractController
             return dump($request->request);
         }
         //We send an email here.
-        $this->sendEmail($mailer);
+        $mailBody = $request->request->get('contact_form');
+        $this->sendEmail($mailer, $mailBody);
 
-        return $this->json(['code' => 200, 'message' => $request->request->get('contact_form')],200);
+        return $this->json(['message' => $request->request->get('contact_form')], 200);
     }
 
     /**
      * @Route("/contact/sendEmail")
      * @param MailerInterface $mailer
+     * @param $mailBody
      * @return bool
      * @throws TransportExceptionInterface
      */
-    public function sendEmail(MailerInterface $mailer)
+    public function sendEmail(MailerInterface $mailer, array $mailBody)
     {
         $email = (new Email())
-            ->from('tiagople94@gmail.com')
-            ->to('tiagople9asdasdasdas4@gmail.com')
-            ->subject('Time for Symfony Mailer!')
+            ->from($mailBody['email'])
+            ->to('Tiagople94@gmail.com')
+            ->subject('Message de Contact')
             ->text('Sending emails is fun again!')
-            ->html('<p>See Twig integration for better HTML integration!</p>');
+            ->html('<p>$mailBody[\'message\']</p>');
 
         if(!$mailer->send($email)) {
             return false;
