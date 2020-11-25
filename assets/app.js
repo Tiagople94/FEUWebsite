@@ -9,9 +9,17 @@
 import './styles/app.scss';
 import "bootstrap/js/src/index";
 import "jquery/dist/jquery";
+import AOS from 'aos';
+require('aos/dist/aos.js');
+require('aos/dist/aos.css');
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
 
+//We apply some rule to AOS library scroll by default
+AOS.init({
+    duration: 2000,
+    once: true
+});
 // Collapse Navbar
 var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
@@ -27,7 +35,7 @@ $(window).scroll(navbarCollapse);
 
 //Ajax call to controller for sending mail "Mailer"
  $(document).ready(function(){   
-         $("#submitButton").on("click", function(event){
+         $("#submitButton").on("click", function(){
             $.ajax({  
                url:  '/contact/formSent',  
                type: 'POST',
