@@ -38,19 +38,28 @@ class ContactFormController extends AbstractController
      * @Route("/contact/formSent", name="form_received", methods={"GET","POST"})
      * @param Request $request
      * @param MailerInterface $mailer
-     * @return array|JsonResponse
+     * @return Response
      * @throws TransportExceptionInterface
      */
     public function receivingForm(Request $request, MailerInterface $mailer) {
 
         if (!$request->isXmlHttpRequest()) {
-            return dump($request->request);
+            return new Response('Error no HTTP REQUEST', 400);
         }
+
         //We send an email here.
         $mailBody = $request->request->get('contact_form');
         $this->sendEmail($mailer, $mailBody);
+        dump($this->sendEmail($mailer, $mailBody));
 
-        return $this->json(['message' => $request->request->get('contact_form')], 200);
+        $template = $this->render('contact_form/confirmationContact.html.twig',[
+                'responseMailer' => $this->sendEmail($mailer, $mailBody)
+        ])->getContent();
+        $json = json_encode($template);
+        $response = new Response($json, 200);
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
     }
 
     /**

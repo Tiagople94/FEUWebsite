@@ -36,15 +36,18 @@ $(window).scroll(navbarCollapse);
 //Ajax call to controller for sending mail "Mailer"
  $(document).ready(function(){   
          $("#submitButton").on("click", function(){
+            $("#submitButton").attr('disabled','disabled');
             $.ajax({  
                url:  '/contact/formSent',  
                type: 'POST',
                data: $('form').serializeArray(),
-               success: function(data) {  
-             		console.log(data);
-               },  
+               success: function(data) {
+                    $('.form-row').html(data);
+                    setTimeout(function(){ $('.close').click()}, 3000);
+               },
                error : function(xhr, textStatus, errorThrown) {  
-                  console.log('Ajax request failed.');  
+                  console.log('Ajax request failed.');
+                  setTimeout(function(){ $('.close').click()}, 3000);
                }  
             });  
          });  
