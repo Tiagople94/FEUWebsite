@@ -50,8 +50,6 @@ class ContactFormController extends AbstractController
         //We send an email here.
         $mailBody = $request->request->get('contact_form');
         $this->sendEmail($mailer, $mailBody);
-        dump($this->sendEmail($mailer, $mailBody));
-
         $template = $this->render('contact_form/confirmationContact.html.twig',[
                 'responseMailer' => $this->sendEmail($mailer, $mailBody)
         ])->getContent();
@@ -77,10 +75,7 @@ class ContactFormController extends AbstractController
             ->subject('Message de Contact')
             ->text('Sending emails is fun again!')
             ->html('<p>$mailBody[\'message\']</p>');
-
-        if(!$mailer->send($email)) {
-            return false;
-        }
+        $mailer->send($email);
 
         return true;
     }
