@@ -97,12 +97,12 @@ $jumbotron-bg: #DCDCDC;
 }
 
 .btn-secondary {
-  background-color: #f75553 !important;
+  background-color: #343a40 !important;
   border-color: #8b0000 !important;
 }
 
 .fontAw {
-  color: #f75553 !important;
+  color: #f29143 !important;
   margin-right: 5px;
 }
 
@@ -112,6 +112,15 @@ $jumbotron-bg: #DCDCDC;
 
 html {
   scroll-behavior: smooth;
+}
+
+#mainNav{
+  background: rgba(0,0,0,0.4);
+}
+
+.nav-link {
+  font-family: "Raleway",sans-serif;
+  font-weight: 100;
 }
 
 // the ~ allows you to reference things in node_modules

@@ -29,9 +29,12 @@ var navbarCollapse = function() {
     }
 };
 // Collapse now if page is not at top
-navbarCollapse();
+if(document.location.pathname === '/'){
+    navbarCollapse();
+    $(window).scroll(navbarCollapse);
+}
 // Collapse the navbar when page is scrolled
-$(window).scroll(navbarCollapse);
+
 
 //Ajax call to controller for sending mail "Mailer"
  $(document).ready(function(){   

@@ -9,38 +9,13 @@
     </head>
     <body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="150">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand text-light js-scroll-trigger" href="#page-top">CEP D'AIX</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link text-light active" href="{{ path('homepage') }}">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#aboutus"></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Qui sommes nous?
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Le CEP D'Aix</a>
-                            <a class="dropdown-item" href="#">Nos activites</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Medias</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#activities">Nos activites</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>        {% block body %}{% endblock %}
-        {% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
-        <div class="pt-5 pb-5 mt-5 border-top bg-dark" id="contact">
+    {{ include('headFoot/header.html') }}
+    {% block body %}{% endblock %}
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+    <!-- Contact banner-->
+    <div class="pt-5 pb-5 mt-5 border-top bg-dark" id="contact">
             <div class="container">
                 <div class="row text-light">
                     <div class="col-lg-4 mx-auto text-center" data-aos="zoom-in">
@@ -69,29 +44,6 @@
                 </div>
             </div>  
         </div>
-        <footer id="footerBar" class="pt-md-5 border-top bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mx-auto">
-                        <h4 class="text-center">Nos reseaux sociaux</h4>
-                        <p>
-                        <div class="col">
-                            <div class="row center justify-content-around">
-                                <ul class="justify-content-center list-unstyled">
-                                    <li>
-                                        <i class="fontAw fab fa-facebook fa-3x"></i>
-                                        <i class="fontAw fab fa-instagram fa-3x"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a href="https://www.linkedin.com/in/santiago-ponce-de-leon-elias-424215ab/" target="_blank"> Santiago Ponce de Leon Elias</a>
-                </div>
-            </div>
-        </footer>
+    {{ include('headFoot/footer.html') }}
     </body>
 </html>
