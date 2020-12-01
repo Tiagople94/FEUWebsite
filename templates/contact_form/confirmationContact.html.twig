@@ -1,19 +1,19 @@
 {% if responseMailer == false %}
     <div class="wp-caption alignnone">
         <h2>
-            <em>Erreur d'envoi</em>
+            <em>{% trans %}Erreur d'envoi{% endtrans %}</em>
         </h2>
         <p>
-            <em>Une erreur s'est produite. Réessayer ultérieurement.</em>
+            <em>{% trans %}Une erreur s'est produite. Réessayer ultérieurement.{% endtrans %}</em>
         </p>
     </div>
 {% else %}
     <div class="wp-caption alignnone">
         <h2>
-            <em>Merci Beaucoup!</em>
+            <em>{% trans %}Merci Beaucoup!{% endtrans %}</em>
         </h2>
         <p>
-            <em>Le message a ete bien envoyer. Nous revenons vers vous au plus vite</em>
+            <em>{% trans %}Le message a ete bien envoyer. Nous revenons vers vous au plus vite{% endtrans %}</em>
         </p>
     </div>
 {% endif %}
