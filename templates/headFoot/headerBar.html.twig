@@ -8,19 +8,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link text-light active" href="{{ path('homepage') }}">Accueil</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-light active" href="{{ path('homepage') }}">
+                        {% trans %}Accueil{% endtrans %}
+                    </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Qui sommes nous?
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ path('aboutus') }}">Le CEP D'Aix</a>
-                        <a class="dropdown-item" href="#">Nos activites</a>
+                        <a class="dropdown-item" href="{{ path('aboutus') }}">{% trans %}Le CEP d'Aix{% endtrans %}</a>
+                        <a class="dropdown-item" href="#">{% trans %}Nos activites{% endtrans %}</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link text-light" href="#">Media</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">{% trans %}Media{% endtrans %}</a></li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">{% trans %}Contact{% endtrans %}</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-light dropdown-toggle" href="" id="dropdown09" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">

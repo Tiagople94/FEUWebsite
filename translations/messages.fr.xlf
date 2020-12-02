@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
       <trans-unit id="nziugJj" resname="Nous contacter">
         <source>Nous contacter</source>
-        <target>__Nous contacter</target>
+        <target>Nous contacter</target>
       </trans-unit>
       <trans-unit id="RoZQPKt" resname="Horaire du culte:">
         <source>Horaire du culte:</source>
-        <target>Service times:</target>
+        <target>Horaire du culte:</target>
       </trans-unit>
       <trans-unit id="0bBOPY2" resname="Tous les Dimanches a 10h30">
         <source>Tous les Dimanches a 10h30</source>
-        <target>Every sunday at 10h30</target>
+        <target>Tous les Dimanches a 10h30</target>
       </trans-unit>
       <trans-unit id="Pmi.xXE" resname="Bienvenue au CEP d'Aix!">
         <source>Bienvenue au CEP d'Aix!</source>
-        <target>Welcome to CEP AIX</target>
+        <target>Bienvenue au CEP d'Aix!</target>
       </trans-unit>
       <trans-unit id="q4WhjAh" resname="Qui sommes-nous?">
         <source>Qui sommes-nous?</source>
-        <target>Who are we?</target>
+        <target>Qui sommes-nous?</target>
       </trans-unit>
       <trans-unit id="dzYRnpP" resname="Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.&#10;                Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.">
         <source>Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
                 Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.</source>
-        <target>__Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
+        <target>Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
                 Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.</target>
       </trans-unit>
       <trans-unit id="vEZUz3P" resname="Héritiers de la Réforme, notre seule source d’autorité est la Bible.&#10;                Nous nous réunissons tous les dimanches pour adorer Dieu et pour entendre l’enseignement de la Bible,&#10;                Parole de Dieu. Le repas du Seigneur, ou cène,&#10;                est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du&#10;                sacrifice de Jésus-Christ pour nous.">
@@ -37,7 +37,7 @@
                 Parole de Dieu. Le repas du Seigneur, ou cène,
                 est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du
                 sacrifice de Jésus-Christ pour nous.</source>
-        <target>__Héritiers de la Réforme, notre seule source d’autorité est la Bible.
+        <target>Héritiers de la Réforme, notre seule source d’autorité est la Bible.
                 Nous nous réunissons tous les dimanches pour adorer Dieu et pour entendre l’enseignement de la Bible,
                 Parole de Dieu. Le repas du Seigneur, ou cène,
                 est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du
@@ -48,38 +48,38 @@
                 Nous faisons partie du CNEF (Conseil National des Évangéliques de France).
                 Nous appartenons également à la famille d’églises CAEF (Communautés et Assemblées Évangéliques de France).
                 Le CEP Aix c’est aussi des partenariats avec le FEU Aix (Foyer Evangélique Universitaire), le CFRi (Centre de Formation Régional pour Implanteur), l’AFP La Source (Association Familiale Protestante) et les Editions CAEF.</source>
-        <target>__Notre association est membre du Réseau FEF (réseau Fraternel Évangélique Français), dont elle partage la confession de foi.
+        <target>Notre association est membre du Réseau FEF (réseau Fraternel Évangélique Français), dont elle partage la confession de foi.
                 Nous faisons partie du CNEF (Conseil National des Évangéliques de France).
                 Nous appartenons également à la famille d’églises CAEF (Communautés et Assemblées Évangéliques de France).
                 Le CEP Aix c’est aussi des partenariats avec le FEU Aix (Foyer Evangélique Universitaire), le CFRi (Centre de Formation Régional pour Implanteur), l’AFP La Source (Association Familiale Protestante) et les Editions CAEF.</target>
       </trans-unit>
       <trans-unit id="yvUMPD_" resname="Profession de Foi">
         <source>Profession de Foi</source>
-        <target>Statement of Faith</target>
+        <target>Profession de Foi</target>
       </trans-unit>
       <trans-unit id="QS3A6M9" resname="Erreur d'envoi">
         <source>Erreur d'envoi</source>
-        <target>Error while sending</target>
+        <target>Erreur d'envoi</target>
       </trans-unit>
       <trans-unit id="GS5nj97" resname="Une erreur s'est produite. Réessayer ultérieurement.">
         <source>Une erreur s'est produite. Réessayer ultérieurement.</source>
-        <target>An error has occurred. Try again later.</target>
+        <target>Une erreur s'est produite. Réessayer ultérieurement.</target>
       </trans-unit>
       <trans-unit id="0AnqJde" resname="Merci Beaucoup!">
         <source>Merci Beaucoup!</source>
-        <target>Thank you!</target>
+        <target>Merci Beaucoup!</target>
       </trans-unit>
       <trans-unit id="0cM3qN9" resname="Le message a ete bien envoyer. Nous revenons vers vous au plus vite">
         <source>Le message a ete bien envoyer. Nous revenons vers vous au plus vite</source>
-        <target>The message has been sent successfully. We will get back to you as soon as possible</target>
+        <target>Le message a ete bien envoyer. Nous revenons vers vous au plus vite</target>
       </trans-unit>
       <trans-unit id="UzFhc1Y" resname="Accueil">
         <source>Accueil</source>
-        <target>Homepage</target>
+        <target>Accueil</target>
       </trans-unit>
       <trans-unit id="A05_.yK" resname="Nos reseaux sociaux">
         <source>Nos reseaux sociaux</source>
-        <target>Our social networks</target>
+        <target>Nos reseaux sociaux</target>
       </trans-unit>
     </body>
   </file>

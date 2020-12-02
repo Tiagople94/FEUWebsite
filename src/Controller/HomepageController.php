@@ -31,6 +31,6 @@ class HomepageController extends AbstractController
     {
         $request->getSession()->set('_locale', $local);
 
-        return $this->redirect('/');
+        return $this->redirect($request->headers->get('referer'));
     }
 }
