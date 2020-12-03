@@ -27,7 +27,7 @@
                 <div class="row text-light">
                     <div class="col-lg-4 mx-auto text-center" data-aos="zoom-in">
                         <i class="fontAw fas fa-map-marker fa-2x"></i>
-                        <span class="d-block text-monospace mt-1">Localisation:</span>
+                        <span class="d-block text-monospace mt-1">{% trans %}Adresse{% endtrans %}</span>
                         <a class="d-block mt-1" target="_blank" href="https://g.page/RockCaliente-aix?share">
                             48 Avenue Robert Schuman, 13090 Aix-en-Provence
                         </a>
@@ -42,7 +42,7 @@
                                 data-aos="zoom-in"
                         >
                             <i class="fas fa-comments fa-2x"></i>
-                            {% trans %}Nous contacter{% endtrans %}
+                            {{ 'homePage.generalOptions.contactUs'|trans }}
                         </button>
                         {{ render(controller('App\\Controller\\ContactFormController::index')) }}                  
                     </div>

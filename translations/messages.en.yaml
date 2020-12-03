@@ -1,0 +1,12 @@
+formContact:
+  yourName: Your name
+  yourEmail: Your email
+  messageContainer: Your message
+  placeHolder: Good morning, I'm contacting you...
+  send: Send
+
+homePage:
+  generalOptions:
+    whoArewe: Who are we?
+    contactUs: Contact us
+
