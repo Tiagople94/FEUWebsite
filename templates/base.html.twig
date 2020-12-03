@@ -4,12 +4,19 @@
         crossorigin="anonymous"></script>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Bienvenue au CEP d'Aix!{% endblock %}</title>
+        <title>
+            {% block title %}
+                {% trans %}Bienvenue au CEP d'Aix!{% endtrans %}
+            {% endblock %}
+        </title>
+
         {% block stylesheets %} {{ encore_entry_link_tags('app') }} {% endblock %}
     </head>
     <body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="150">
     <!-- Navigation-->
-    {{ include('headFoot/header.html') }}
+    {{ include('headFoot/headerBar.html.twig') }}
+
+
     {% block body %}{% endblock %}
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
@@ -20,30 +27,34 @@
                 <div class="row text-light">
                     <div class="col-lg-4 mx-auto text-center" data-aos="zoom-in">
                         <i class="fontAw fas fa-map-marker fa-2x"></i>
-                        <span class="d-block text-monospace mt-1">Localisation:</span>
-                        <span class="d-block mt-1">12 Bis rue de Provence</span>
+                        <span class="d-block text-monospace mt-1">{% trans %}Adresse{% endtrans %}</span>
+                        <a class="d-block mt-1" target="_blank" href="https://g.page/RockCaliente-aix?share">
+                            48 Avenue Robert Schuman, 13090 Aix-en-Provence
+                        </a>
                     </div>
                     <div class="col-lg-4 mx-auto text-center">
 
                         <button type="button"
-                                class="btn-xl btn-secondary d-flex align-items-center m-auto"
+                                class="btn-xl btn-primary d-flex align-items-center m-auto"
                                 data-toggle="modal"
                                 data-target="#contactForm"
                                 id="contactButton"
                                 data-aos="zoom-in"
                         >
-                            <i class="fas fa-comments fa-2x"></i> Nous contacter
+                            <i class="fas fa-comments fa-2x"></i>
+                            {{ 'homePage.generalOptions.contactUs'|trans }}
                         </button>
                         {{ render(controller('App\\Controller\\ContactFormController::index')) }}                  
                     </div>
                     <div class="col-lg-4 mx-auto text-center" data-aos="zoom-in">
                         <i class="fontAw fas fa-clock fa-2x"></i>
-                        <span class="d-block text-monospace mt-1">Horaire du culte:</span>
-                        <span class="d-block mt-1">Tous les Dimanches a 10h30</span>
+                        <span class="d-block text-monospace mt-1"> {% trans %}Horaire du culte:{% endtrans %}</span>
+                        <span class="d-block mt-1"> {% trans %}Tous les Dimanches a 10h30{% endtrans %}</span>
                     </div>
                 </div>
             </div>  
         </div>
-    {{ include('headFoot/footer.html') }}
+    {{ include('headFoot/footer.html.twig') }}
     </body>
+
 </html>

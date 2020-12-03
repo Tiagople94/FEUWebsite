@@ -1,0 +1,41 @@
+<!-- Container About -->
+<div class="container about">
+    <div class="row homepage-bible" data-aos="zoom-in" data-aos-duration="1000">
+        <blockquote class="text-center">
+            <span class="quote-icon">
+                <i class="fontAw fas fa-bible fa-4x"></i>
+            </span>
+            <p>
+                {% trans %} « Car Dieu a tant aimé le monde qu'il a donné son Fils unique,
+                afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle. »{% endtrans %}
+            </p>
+            <version>
+                {% trans %} Jean 3:16 - Version Louis Segond {% endtrans %}
+            </version>
+        </blockquote>
+    </div>
+
+    <div class="row featurette" id="aboutus" data-aos="flip-down">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">
+                <i class="fontAw fas fa-question-circle fa-1x"></i>   {% trans %}Qui sommes-nous?{% endtrans %}
+            </h2>
+            <p class="lead">
+                {% trans %}Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
+                Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.{% endtrans %}
+            </p>
+            <br>
+            <p class="lead">{% trans %}Héritiers de la Réforme, notre seule source d’autorité est la Bible...{% endtrans %}</p>
+            <br>
+            <button type="button" class="btn-xl btn-secondary" href="{{ path('showAboutUs') }}">
+                {% trans %}Lire davantage {% endtrans %}
+            </button>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="http://lorempixel.com/500/500/people" data-holder-rendered="true">
+        </div>
+    </div>
+</div>
+
+
+<!-- Container About END -->

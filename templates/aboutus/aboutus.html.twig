@@ -1,29 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Qui sommes-nous?{% endblock %}
+{% block title %}{{ 'homePage.generalOptions.whoArewe'|trans }}{% endblock %}
 
 {% block body %}
 <div class="container">
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">
-                <i class="fontAw fas fa-question-circle fa-1x"></i>   Qui sommes-nous?
+                <i class="fontAw fas fa-question-circle fa-1x"></i>   {{ 'homePage.generalOptions.whoArewe'|trans }}
             </h2>
             <p class="lead">
+                {% trans %}
                 Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
                 Nous sommes chrétiens protestants évangéliques attachés à la Bible et à l’Evangile révélé en Jésus-Christ.
+                {% endtrans %}
             </p>
             <br>
             <p class="lead">
-                Héritiers de la Réforme, notre seule source d’autorité est la Bible. Nous nous réunissons tous les dimanches pour adorer Dieu et pour entendre l’enseignement de la Bible,
-                Parole de Dieu. Le repas du Seigneur, ou cène, est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du sacrifice de Jésus-Christ pour nous.
+                {% trans %}
+                Héritiers de la Réforme, notre seule source d’autorité est la Bible.
+                Nous nous réunissons tous les dimanches pour adorer Dieu et pour entendre l’enseignement de la Bible,
+                Parole de Dieu. Le repas du Seigneur, ou cène,
+                est un élément important de notre célébration hebdomadaire pour nous aider à nous souvenir du
+                sacrifice de Jésus-Christ pour nous.
+                {% endtrans %}
             </p>
             <br>
             <p class="lead">
+                {% trans %}
                 Notre association est membre du Réseau FEF (réseau Fraternel Évangélique Français), dont elle partage la confession de foi.
                 Nous faisons partie du CNEF (Conseil National des Évangéliques de France).
                 Nous appartenons également à la famille d’églises CAEF (Communautés et Assemblées Évangéliques de France).
                 Le CEP Aix c’est aussi des partenariats avec le FEU Aix (Foyer Evangélique Universitaire), le CFRi (Centre de Formation Régional pour Implanteur), l’AFP La Source (Association Familiale Protestante) et les Editions CAEF.
+                {% endtrans %}
             </p>
         </div>
         <div class="col-md-5 my-auto">
@@ -31,4 +40,26 @@
         </div>
     </div>
 </div>
+    <div id="profession" style="background-color:#DCDCDC" >
+        <div class="container">
+            <div class="row featurette">
+                <div class="col-md-12" >
+                    <h2 class="heading">
+                        {% trans %} Profession de Foi {% endtrans %}
+                    </h2>
+                    <br>
+                    <p class="lead">
+                        Les Eglises CAEF en quelques points:
+
+                        Elles s’inscrivent complètement dans l’héritage des premiers chrétiens, de la Réforme protestante, de la foi anabaptiste et des Réveils évangéliques des 18e et 19e siècles.
+                        Au niveau théologique, les CAEF ont une confession de foi assez classique, se situant dans le courant du réseau FEF.
+                        Les CAEF ont un fonctionnement congrégationaliste, c’est-à-dire, chaque Église locale ou congrégation n’a pas de structure au-dessus d’elle qui lui dicte sa conduite. Les décisions se prennent, en dernier lieu, au niveau de l’Église locale et non au niveau d’un comité national, d’un synode, d’un évêque ou d’une structure internationale.
+                        Toutefois les CAEF se démarquent des Églises « complètement indépendantes », elles pensent qu’il est essentiel de vivre et de témoigner de l’unité du Corps de Christ, et de nouer des relations fraternelles concrètes avec des Eglises sœurs, notamment avec celles de sa propre famille d’Eglises. Les CAEF ont aussi une Assemblée Générale nationale qui peut prendre des décisions avec une certaine implication sur l’ensemble des Eglises.
+                        Les CAEF sont pleinement respectueuses des structures qui ont cherché et qui cherchent encore à rapprocher les Évangéliques sur une base biblique comme le réseau FEF, l’ex-Alliance Évangélique Française, le CNEF…
+                        Les Églises CAEF ont assez souvent des « pasteurs » en leur sein qu’elle appelle aussi « serviteur », mais ils sont anciens parmi les anciens. La direction collégiale de l’Église est un des points forts des CAEF. En cela elles s’inscrivent pleinement dans le réseau des Églises de Frères à l’échelle internationale (www.ibcm.net).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

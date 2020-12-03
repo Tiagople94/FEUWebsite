@@ -1,0 +1,11 @@
+formContact:
+  yourName: Votre nom
+  yourEmail: Votre mail
+  messageContainer: Le contenu de votre message
+  placeHolder: Bonjour, je vous contacte...
+  send: Envoyer
+
+homePage:
+  generalOptions:
+    whoArewe: Qui sommes-nous?
+    contactUs: Nous contacter

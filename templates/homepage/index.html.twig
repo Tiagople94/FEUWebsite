@@ -13,11 +13,6 @@
 
             <div class="carousel-item">
                 <img class="w-100 img-fluid" src="http://lorempixel.com/1600/666/people/" alt="3 slide">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>Une eglise dynamisé par l'evangile</h1>
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -32,8 +27,8 @@
     </div>
 </div>
 <div id="homepage_body">
-    {{ include('homepage/homepage-about.html') }}
-    <hr class="featurette-divider" id="activities">
-    {{ include('homepage/activities.html') }}
+    {{ include('homepage/homepage-about.html.twig') }}
+    <hr class="featurette-divider" id="media">
+    {{ include('homepage/activities.html.twig') }}
 </div>
 {% endblock %}
