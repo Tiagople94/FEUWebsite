@@ -127,6 +127,12 @@ html {
   background-color: #DCDCDC;
 }
 
+#imageLogo {
+  width: 10em;
+}
+
+
+
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
 

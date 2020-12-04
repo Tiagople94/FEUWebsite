@@ -5,6 +5,34 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
+      <trans-unit id="YfFtwTx" resname="formContact.yourName">
+        <source>formContact.yourName</source>
+        <target>Your name</target>
+      </trans-unit>
+      <trans-unit id="OtvWvws" resname="formContact.yourEmail">
+        <source>formContact.yourEmail</source>
+        <target>Your email</target>
+      </trans-unit>
+      <trans-unit id="G7jC2ft" resname="formContact.messageContainer">
+        <source>formContact.messageContainer</source>
+        <target>Your message</target>
+      </trans-unit>
+      <trans-unit id="CLVBjhE" resname="formContact.placeHolder">
+        <source>formContact.placeHolder</source>
+        <target>Good morning, I'm contacting you...</target>
+      </trans-unit>
+      <trans-unit id="u25bnMD" resname="formContact.send">
+        <source>formContact.send</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="0xJ2eOW" resname="homePage.generalOptions.whoArewe">
+        <source>homePage.generalOptions.whoArewe</source>
+        <target>Who are we?</target>
+      </trans-unit>
+      <trans-unit id="wbPD5dX" resname="homePage.generalOptions.contactUs">
+        <source>homePage.generalOptions.contactUs</source>
+        <target>Contact us</target>
+      </trans-unit>
       <trans-unit id="RoZQPKt" resname="Horaire du culte:">
         <source>Horaire du culte:</source>
         <target>Service times:</target>
@@ -122,6 +150,33 @@
         <source>Qui Sommes Nous?</source>
         <target>Who are we?</target>
       </trans-unit>
+      <trans-unit id="bYoB_bz" resname="Les Eglises CAEF en quelques points:">
+        <source>Les Eglises CAEF en quelques points:</source>
+        <target>The CAEF churches in a few points:</target>
+      </trans-unit>
+      <trans-unit id=".2klchj" resname="Elles s’inscrivent complètement dans l’héritage des premiers chrétiens, de la Réforme protestante, de la foi anabaptiste et des Réveils évangéliques des 18e et 19e siècles.">
+        <source>Elles s’inscrivent complètement dans l’héritage des premiers chrétiens, de la Réforme protestante, de la foi anabaptiste et des Réveils évangéliques des 18e et 19e siècles.</source>
+        <target>They are completely in line with the legacy of the early Christians, the Protestant Reformation, the Anabaptist faith and the Evangelical Revivals of the 18th and 19th centuries.</target>
+      </trans-unit>
+      <trans-unit id="xsKaizq" resname="Au niveau théologique, les CAEF ont une confession de foi assez classique, se situant dans le courant du réseau FEF.">
+        <source>Au niveau théologique, les CAEF ont une confession de foi assez classique, se situant dans le courant du réseau FEF.</source>
+        <target>At the theological level, the CAEF have a fairly classic confession of faith, being in the current of the FEF network.</target>
+      </trans-unit>
+      <trans-unit id="Z2C9.ya" resname="Les CAEF ont un fonctionnement congrégationaliste, c’est-à-dire, chaque Église locale ou congrégation n’a pas de structure au-dessus d’elle qui lui dicte sa conduite. Les décisions se prennent, en dernier lieu, au niveau de l’Église locale et non au niveau d’un comité national, d’un synode, d’un évêque ou d’une structure internationale.">
+        <source>Les CAEF ont un fonctionnement congrégationaliste, c’est-à-dire, chaque Église locale ou congrégation n’a pas de structure au-dessus d’elle qui lui dicte sa conduite. Les décisions se prennent, en dernier lieu, au niveau de l’Église locale et non au niveau d’un comité national, d’un synode, d’un évêque ou d’une structure internationale.</source>
+        <target>The CAEFs are congregationalist, that is, each local church or congregation does not have a structure above it that dictates its conduct. Decisions are ultimately made at the level of the local Church and not at the level of a national committee, synod, bishop or international structure. </target>
+      </trans-unit>
+      <trans-unit id="LmrTatI" resname="Toutefois les CAEF se démarquent des Églises « complètement indépendantes », elles pensent qu’il est essentiel de vivre et de témoigner de l’unité du Corps de Christ, et de nouer des relations fraternelles concrètes avec des Eglises sœurs, notamment avec celles de sa propre famille d’Eglises. Les CAEF ont aussi une Assemblée Générale nationale qui peut prendre des décisions avec une certaine implication sur l’ensemble des Eglises.">
+        <source>Toutefois les CAEF se démarquent des Églises « complètement indépendantes », elles pensent qu’il est essentiel de vivre et de témoigner de l’unité du Corps de Christ, et de nouer des relations fraternelles concrètes avec des Eglises sœurs, notamment avec celles de sa propre famille d’Eglises. Les CAEF ont aussi une Assemblée Générale nationale qui peut prendre des décisions avec une certaine implication sur l’ensemble des Eglises.</source>
+        <target>However the CAEF stand out from the “completely independent” Churches, they believe that it is essential to live and bear witness to the unity of the Body of Christ, and to establish concrete fraternal relations with sister Churches, in particular with those of his own family of churches. CAEF also have a National General Assembly which can take decisions with some involvement in all the churches. </target>
+      </trans-unit>
+      <trans-unit id="SPpyHL7" resname="Les CAEF sont pleinement respectueuses des structures qui ont cherché et qui cherchent encore à rapprocher les Évangéliques sur une base biblique comme le réseau FEF, l’ex-Alliance Évangélique Française, le CNEF…">
+        <source>Les CAEF sont pleinement respectueuses des structures qui ont cherché et qui cherchent encore à rapprocher les Évangéliques sur une base biblique comme le réseau FEF, l’ex-Alliance Évangélique Française, le CNEF…</source>
+        <target>The CAEFs are fully respectful of the structures which have sought and which still seek to bring together the Evangelicals on a biblical basis such as the FEF network, the former Alliance Évangélique Française, the CNEF ... </target>
+      </trans-unit>
+      <trans-unit id="X_gzJVN" resname="Les Églises CAEF ont assez souvent des « pasteurs » en leur sein qu’elle appelle aussi « serviteur », mais ils sont anciens parmi les anciens. La direction collégiale de l’Église est un des points forts des CAEF. En cela elles s’inscrivent pleinement dans le réseau des Églises de Frères à l’échelle internationale">
+        <source>Les Églises CAEF ont assez souvent des « pasteurs » en leur sein qu’elle appelle aussi « serviteur », mais ils sont anciens parmi les anciens. La direction collégiale de l’Église est un des points forts des CAEF. En cela elles s’inscrivent pleinement dans le réseau des Églises de Frères à l’échelle internationale</source>
+        <target> CAEF churches quite often have "pastors" within them which she also calls "servant", but they are elders among the elders. The collegial leadership of the Church is one of the strengths of CAEFs. In this they are fully part of the network of Brothers' Churches on an international scale </target>      </trans-unit>
     </body>
   </file>
 </xliff>
