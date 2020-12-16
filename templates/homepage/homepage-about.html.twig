@@ -18,7 +18,7 @@
     <div class="row featurette" id="aboutus" data-aos="flip-down">
         <div class="col-md-7">
             <h2 class="featurette-heading">
-                <i class="fontAw fas fa-question-circle fa-1x"></i>   {% trans %}Qui sommes-nous?{% endtrans %}
+                <i class="fontAw fas fa-question-circle fa-1x"></i>    {{ 'homePage.generalOptions.whoArewe'|trans }}
             </h2>
             <p class="lead">
                 {% trans %}Le CEP (Centre Evangélique Protestant) du Pays d’Aix est une communauté d’hommes et de femmes disciples de Jésus-Christ.
@@ -27,9 +27,9 @@
             <br>
             <p class="lead">{% trans %}Héritiers de la Réforme, notre seule source d’autorité est la Bible...{% endtrans %}</p>
             <br>
-            <button type="button" class="btn-xl btn-secondary" href="{{ path('showAboutUs') }}">
+            <a class="btn-xl btn-secondary" href="{{ path('showAboutUs') }}">
                 {% trans %}Lire davantage {% endtrans %}
-            </button>
+            </a>
         </div>
         <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="http://lorempixel.com/500/500/people" data-holder-rendered="true">
